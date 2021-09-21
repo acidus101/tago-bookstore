@@ -21,7 +21,9 @@ const LoginScreen = ({ navigation }) => {
         console.log("LoginScreen.js 6 | loggin in");
         try {
             const { type, user } = await Google.logInAsync({
-                androidClientId: `875455185968-7moc94ojmdnehgpf6r9j6b46k3jgkc2t.apps.googleusercontent.com`,
+                // behavior:'web',
+                // androidClientId: `875455185968-7moc94ojmdnehgpf6r9j6b46k3jgkc2t.apps.googleusercontent.com`,
+                androidStandaloneAppClientId: `875455185968-e0sr3h56g2cm564ieha3n2gogm0pn3ai.apps.googleusercontent.com`
             });
             setLoading(false);
 
